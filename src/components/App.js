@@ -2,12 +2,12 @@ import React, { useRef } from "react";
 import "./../styles/App.css";
 
 const rows = [
-  { id: 1, name: "Akshat", age: 23 },
-  { id: 2, name: "Ajay", age: 21 },
-  { id: 3, name: "Arun", age: 22 },
-  { id: 4, name: "Aryan", age: 20 },
-  { id: 5, name: "Akash", age: 22 },
-  { id: 6, name: "Atul", age: 23 },
+  { id: 1, name: "Ram", age: 25 },
+  { id: 2, name: "Shyam", age: 30 },
+  { id: 3, name: "Ali", age: 35 },
+  { id: 4, name: "Shaw", age: 20 },
+  { id: 5, name: "Tavneet", age: 50 },
+  { id: 6, name: "Lakshmi", age: 40 },
 ];
 
 
@@ -30,7 +30,7 @@ const App = () => {
   
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(Object.keys(dataRef.current));
+    console.log('Edited rows:', Object.keys(dataRef.current).map(value=>Number(value)));
 
   }
 
